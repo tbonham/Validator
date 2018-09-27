@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csw", "csw", "{3591BFED-7DF3-47FA-9C5E-13F8948ECF89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cs", "cs", "{D644707A-E62C-435D-B34F-A7F3B0ABC646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Validator.csproj", "{D4856DCA-49E3-449F-BBAC-3D66816F9A49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4856DCA-49E3-449F-BBAC-3D66816F9A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4856DCA-49E3-449F-BBAC-3D66816F9A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4856DCA-49E3-449F-BBAC-3D66816F9A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4856DCA-49E3-449F-BBAC-3D66816F9A49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4856DCA-49E3-449F-BBAC-3D66816F9A49} = {D644707A-E62C-435D-B34F-A7F3B0ABC646}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58C8B615-2534-43CE-88D9-35D8085A890E}
+	EndGlobalSection
+EndGlobal
