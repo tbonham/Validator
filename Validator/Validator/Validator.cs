@@ -10,6 +10,12 @@ namespace Validator
         #region FirstName
         public static Boolean FirstName(String strValue)
         {
+            const String strPatten = "[A-Za-z]{1,50}";
+            Match match = Regex.Match(strValue, strPatten);                
+            if(match.Success)
+            {
+                return true;
+            }
             return false;
         }
 
@@ -35,7 +41,7 @@ namespace Validator
         /// </summary>
         public static String SanitizeGeneralInput(String value)
         {
-            const String strBlank = "";
+            const String strBlank = @"";
             const double TimeOut = 4.0;
             const String strRegex = @"[^\w\.@-]";
             try
