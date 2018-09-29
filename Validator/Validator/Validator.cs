@@ -13,6 +13,10 @@ namespace Validator
             return false;
         }
 
+        public static Boolean FirstNameProper(String strValue)
+        {
+            return false;
+        }
         public static Boolean FirstNameCustom(String strPatten, String strValue)
         {
             return false;
@@ -31,13 +35,15 @@ namespace Validator
         /// </summary>
         public static String SanitizeGeneralInput(String value)
         {
-            String strRegex = @"[^\w\.@-]";
+            const String strBlank = "";
+            const double TimeOut = 4.0;
+            const String strRegex = @"[^\w\.@-]";
             try
             {
                 return Regex.Replace(value, strRegex,
-                    "",
+                    strBlank,
                     RegexOptions.None,
-                    TimeSpan.FromSeconds(3.0));
+                    TimeSpan.FromSeconds(TimeOut));
             }
             catch (RegexMatchTimeoutException)
             {
