@@ -62,6 +62,14 @@ namespace Validator
             }
             return false;
         }
+        /// <summary>
+        /// Custom validation for last names. 
+        /// strPatten well hold custom regex. 
+        /// strValue well be the value.
+        /// </summary>
+        /// <param name="strPatten"></param>
+        /// <param name="strValue"></param>
+        /// <returns></returns>
         public static Boolean LastNameCustom(String strPatten,String strValue)
         {
             Match match = Regex.Match(strValue, strPatten);
