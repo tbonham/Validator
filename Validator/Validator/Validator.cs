@@ -21,17 +21,56 @@ namespace Validator
 
         public static Boolean FirstNameProper(String strValue)
         {
+            const String strPatten = "[A-Z]{1}[A-Za-z]{1,50}";
+            Match match = Regex.Match(strValue, strPatten);
+            if(match.Success)
+            {
+                return true;
+            }
             return false;
         }
         public static Boolean FirstNameCustom(String strPatten, String strValue)
         {
+            Match match = Regex.Match(strValue, strPatten);
+            if(match.Success)
+            {
+                return true;
+            }
             return false;
         }
 
         #endregion
 
         #region LastName
-
+        public static Boolean LastName(String strValue)
+        {
+            const String strPatten = "[A-Za-z]{1,50}";
+            Match match = Regex.Match(strValue, strPatten);
+            if(match.Success)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static Boolean LastNameProper(String strValue)
+        {
+            const String strPatten = "[A-Z]{1}[A-Za-z]{1,50}";
+            Match match = Regex.Match(strValue, strPatten);
+            if(match.Success)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static Boolean LastNameCustom(String strPatten,String strValue)
+        {
+            Match match = Regex.Match(strValue, strPatten);
+            if (match.Success)
+            {
+                return true;
+            }
+            return false;
+        }
         #endregion
 
         /// <summary>
