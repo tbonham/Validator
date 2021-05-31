@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/Validator"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: SecurityCodeScan.VS2017
+    versions:
+    - 3.5.3
+  - dependency-name: SecurityCodeScan
+    versions:
+    - 3.5.3
